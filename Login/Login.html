@@ -10,22 +10,24 @@
 <body background="/Images/FondoLogin.jpg">
     <div class="login-box">
         <h2>Bienvenido</h2>
-        <form>
+        <form action="" id="formulario">
           <div class="user-box">
-            <input type="text" name="" required="" id="idNombre">
-            <label>Nombre de usuario</label>
+            <input type="email" name="correo" required id="idCorreo">
+            <label for="correo">Correo</label>
           </div>
           <div class="user-box">
-            <input type="password" name="" required="" id="idContrasena">
-            <label>Contraseña</label>
+            <input type="password" name="contrasena" required id="idContrasena">
+            <label for="contrasena">Contraseña</label>
           </div>
-          <a class="submit" href="">
+           <a type="submit" class="submit" href="" onclick="return enviarFormulario()" value="Enviar">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Submit
-          </a>
+            INGRESAR
+          </a> 
+
+          
           <br>
           <br>
           <div class="link_Ayuda">
@@ -37,6 +39,8 @@
               Registrar</a>
           </div>
         </form>
+        <div id="error"></div>
       </div>
+      <script src="Login.js"></script>
 </body>
 </html>
