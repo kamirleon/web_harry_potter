@@ -5,7 +5,7 @@ html {
     margin:0;
     padding:0;
     font-family: sans-serif;
-    background-size:auto;
+    background-size:cover;
     background-position: center;
   }
   
@@ -57,7 +57,7 @@ html {
   
   .login-box .user-box input:focus ~ label,
   .login-box .user-box input:valid ~ label {
-    top: -40px;
+    top: -20px;
     left: 0;
     color: #03e9f4;
     font-size: 12px;
@@ -82,9 +82,9 @@ html {
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
   }
   
   .login-box .submit span {
@@ -166,3 +166,35 @@ html {
       bottom: 100%;
     }
   }
+
+  .select_option {
+    position: relative;
+    width: 60%;
+  }
+  .select_option select {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 15px;
+    cursor: pointer;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid grey;
+    border-radius: 0;
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: all 0.2s ease;
+  }
+  .select_option select:-ms-expand {
+    display: none;
+  }
+  .select_option select   :hover > :focus {
+    color: black;
+    background: #fafafa;
+    border-color: black;
+    outline: none;
+  }
+    
+  

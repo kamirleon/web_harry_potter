@@ -7,7 +7,7 @@
     <title>Harry Potter</title>
     <link rel="stylesheet" href="Register.css">
 </head>
-<body background="/Images/FondoLogin.jpg">
+<body background="/Images/fondoRegister.jpg">
     <div class="login-box">
         <h2>Bienvenido</h2>
         <form action="" id="formulario">
@@ -27,17 +27,24 @@
             <input type="password" name="contrasena" required id="idContrasena">
             <label for="contrasena">Contraseña</label>
           </div>
+          <div class="input_field select_option">
+            <select>
+              <option>--Selecciona una casa--</option>
+              <option>Gryffindor</option>
+              <option>Slytherin</option>
+              <option>Hufflepuff</option>
+              <option>Ravenclaw</option>
+            </select>
+            <div class="select_arrow"></div>
+          </div>
+          <br>
           <div class="user-box">
-            <input type="email" name="correo" required id="idCorreo">
-            <label for="correo">Correo</label>
+            <input type="text" name="direccion" required id="idDireccion">
+            <label for="direccion">Direccion</label>
           </div>
           <div class="user-box">
-            <input type="email" name="correo" required id="idCorreo">
-            <label for="correo">Correo</label>
-          </div>
-          <div class="user-box">
-            <input type="email" name="correo" required id="idCorreo">
-            <label for="correo">Correo</label>
+            <input type="tel" name="telefono" required id="idTelefono">
+            <label for="telefono">Telefono</label>
           </div>
           
            <a type="submit" class="submit" href="" onclick="return enviarFormulario()" value="Enviar">
