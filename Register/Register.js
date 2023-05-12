@@ -1,5 +1,7 @@
 $(document).ready(function () {
     
+  
+
     //Validar nombre
     $('#idNombre').blur(function () { 
         var vNombre = $('#idNombre').val();
@@ -57,4 +59,48 @@ $(document).ready(function () {
         $('#idContrasena').removeClass('border-danger');
     });
 
+    //Validar Seleccion
+
+    $('#idSeleccion').blur(function () { 
+        var vSeleccion = $('#idSeleccion').val();
+
+        if(vSeleccion === '--Selecciona una casa--'){
+            $('#idSeleccion').addClass('border-danger');
+
+        }
+    });
+
+    $('#idSeleccion').click(function (e) { 
+        $('#idSeleccion').removeClass('border-danger');
+    });
+
+    //Validar Direccion
+    $('#idDireccion').blur(function () { 
+        var vDireccion = $('#idDireccion').val();
+
+        if(vDireccion === ''){
+            $('#idDireccion').addClass('border-danger');
+            
+        }
+    });
+
+    $('#idDireccion').click(function (e) { 
+        $('#idDireccion').removeClass('border-danger');
+    });
+
+    //Validar Telefono
+    $('#idTelefono').blur(function () { 
+        var vSeleccion = $('#idTelefono').val();
+
+        if(vSeleccion === ''){
+            $('#idTelefono').addClass('border-danger');
+            $('#lTelefono').addClass('border-danger');
+
+        }
+    });
+
+    $('#idTelefono').click(function (e) { 
+        $('#idTelefono').removeClass('border-danger');
+        $('#lTelefono').removeClass('text-danger');
+    });
 });
