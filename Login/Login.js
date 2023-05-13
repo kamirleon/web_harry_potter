@@ -22,6 +22,7 @@ function enviarFormulario(){
     correo.innerHTML = mensajesError.join(', ');
     return false;
 
+
 }
 
 // var formulario = document.getElementById('formulario');
