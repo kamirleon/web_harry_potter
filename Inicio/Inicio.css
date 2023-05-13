@@ -270,6 +270,16 @@ background-position: center;
   }
 }
 
+.Texto{
+  text-align: center;
+  color: #fff;
+  margin-top: 200px;
+  -webkit-text-stroke: 3px black;
+  font-size: x-large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
 
 
 
