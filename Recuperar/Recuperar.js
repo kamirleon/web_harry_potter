@@ -19,6 +19,10 @@ function enviarFormulario(){
         mensajesError.push('Los correos no coinciden');
     }
 
+    if (correo.value === correo2.value){
+        
+    }
+
     console.log(mensajesError);
     error.innerHTML = mensajesError.join(', ');
 
